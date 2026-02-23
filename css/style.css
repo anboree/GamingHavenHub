@@ -1,0 +1,34 @@
+/* Set better box-sizing and removed all default margins and padding */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables for website colors */
+:root{
+    --main-background-color: rgb(20, 20, 20);
+    --secondary-background-color: rgb(40, 40, 40);
+    --navbar-color: rgb(0, 0, 0);
+    --text-color: rgb(225, 225, 225);
+}
+
+body{
+    background-color: var(--main-background-color);
+}
+
+/* Navbar */
+#navbar{
+    width: 100%;
+    background-color: var(--navbar-color);
+    padding: 10px;
+    border-bottom: 1px solid var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+#navbar-header{
+    color: var(--text-color);
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 20px;
+}
