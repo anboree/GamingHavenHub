@@ -9,6 +9,18 @@
         <!-- Logo & Title -->
         <a href="index.php"><img id="navbar-logo" src="assets/gaming-haven-hub-logo.png" alt="ghh logo" width="55px"></a>
         <span id="navbar-header">GamingHavenHub</span>
+        <div class="navbar-flex-container">
+            <!-- Logged out user -->
+            <?php if(!isset($_SESSION["id"])): ?>
+                <img src="assets/login-icon.png" alt="login-icon">
+                <a class="navbar-link" href="">Login</a>
+
+                <img src="assets/register-icon.png" alt="register-icon" width="32px" style="margin-right: 2px;">
+                <a class="navbar-link" href="">Register</a>
+            <!-- Logged in user -->
+            <?php else: ?>
+            <?php endif ?>
+        </div>
     </nav>
 </body>
 </html>
