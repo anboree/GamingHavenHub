@@ -32,3 +32,18 @@ body{
     font-family: "Press Start 2P", sans-serif;
     font-size: 20px;
 }
+
+.navbar-flex-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    margin-right: 12px;
+}
