@@ -13,10 +13,10 @@
             <!-- Logged out user -->
             <?php if(!isset($_SESSION["id"])): ?>
                 <img src="assets/login-icon.png" alt="login-icon">
-                <a class="navbar-link" href="">Login</a>
+                <a class="navbar-link" href="login.php">Login</a>
 
                 <img src="assets/register-icon.png" alt="register-icon" width="32px" style="margin-right: 2px;">
-                <a class="navbar-link" href="">Register</a>
+                <a class="navbar-link" href="register.php">Register</a>
             <!-- Logged in user -->
             <?php else: ?>
             <?php endif ?>
